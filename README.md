@@ -10,6 +10,7 @@ Comparative Analysis of Retrieval-Augmented Generation (RAG) Search Techniques
 6. Comparison Analysis
 7. References
 8. Acknowledgments
+9. Future Enhancements
 
 ## Overview
 This project provides a series of Jupyter notebooks that explore and compare various Retrieval-Augmented Generation (RAG) search techniques. Each notebook evaluates a different RAG method, focusing on key performance metrics like latency and response time, enabling developers and knowledge seekers to gain hands-on experience and insights into these techniques. Together, these notebooks serve as a "cookbook" for those looking to deepen their understanding of RAG search techniques, practice implementing them locally, and enhance their knowledge in search optimization and retrieval-augmented generation.
