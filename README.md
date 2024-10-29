@@ -267,7 +267,7 @@ This analysis underscores that these response and latency metrics are also influ
 - [Advanced RAG Techniques](https://www.falkordb.com/blog/advanced-rag/)<br>
 
 ## Acknowledgments
-A heartfelt thanks to all the open-source communities, authors, and researchers whose resources and insights made this project possible. Special appreciation to the creators of the tools, libraries, and articles referenced here. This project stands on the collective knowledge of many dedicated professionals, and I am grateful for the documentation support and inspiration that enabled me to take on this initiative.
+A heartfelt thanks to all the open-source communities, authors, and researchers whose resources and insights made this project possible. Special appreciation to the creators of the tools, libraries, and articles referenced here. This project stands on the collective knowledge from multiple sources, and I am grateful for the documentation support and inspiration that enabled me to take on this initiative.
 
 ## Future Enhancements
 *Exciting new implementations and enhancements are in progress! Upcoming updates will introduce additional topics such as LLM evaluation, context and answer relevancy analysis, and advanced techniques, along with more resources, performance optimizations, and expanded RAG search capabilities. Stay tuned for future improvements and project expansions!*
