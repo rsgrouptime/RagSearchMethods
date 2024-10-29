@@ -1,0 +1,17 @@
+{
+    "chunk_size":1500,
+    "chunk_overlap":200,
+    "input_directory":"input_pdfs",
+    "node_json":"data//nodes.json",
+    "qdrant_URL":"http://localhost:32768/",
+    "Collection_Name":["RAGdenseCollection","RAGdenseHFEmbedCollection","RAGHierIndexCollection","RAGHierIndexCollectionSummary","RAGCheckCollection","RAGParentChildCollection","RAGSentenceWindowCollection","RAGSparseCollection"],
+    "fastembed_dense_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "fastembed_sparse_model": "Qdrant/bm42-all-minilm-l6-v2-attentions",
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "huggingface_token":"*************************************",
+    "hugging_gen_model":"tiiuae/falcon-7b-instruct",
+    "hugging_gen_temperature":0.1,
+    "hugging_gen_task":"text-generation",
+    "hugging_gen_max_token":"1024",
+    "sub_chunk_sizes":[512,800]
+}
