@@ -4,7 +4,7 @@
     "input_directory":"input_pdfs",
     "node_json":"data//nodes.json",
     "qdrant_URL":"http://localhost:32768/",
-    "Collection_Name":["RAGdenseCollection","RAGdenseHFEmbedCollection","RAGHierIndexCollection","RAGHierIndexCollectionSummary","RAGCheckCollection","RAGParentChildCollection","RAGSentenceWindowCollection","RAGSparseCollection"],
+    "Collection_Name":["RAGdenseCollection","RAGdenseHFEmbedCollection","RAGHierIndexCollection","RAGHierIndexCollectionSummary","RAGCheckCollection","RAGParentChildCollection","RAGSentenceWindowCollection","RAGSparseCollection","RAGHydeCollection"],
     "fastembed_dense_model": "sentence-transformers/all-MiniLM-L6-v2",
     "fastembed_sparse_model": "Qdrant/bm42-all-minilm-l6-v2-attentions",
     "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
