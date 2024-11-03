@@ -212,7 +212,7 @@ To use a Hugging Face token stored in a config/global_config.json file in a Pyth
       ![image](https://github.com/user-attachments/assets/703fdcc7-2baf-4ec9-99c9-6878990a7801)
     
     **6. RAG_HyDE_PredefinedFunction_HDE.ipynb**
-    - This notebook applies the same approach as outlined in point 5, with one key difference: here, I've used the predefined LangChain HypotheticalDocumentEmbedder method. This streamlines the process by eliminating the manual effort required to call the LLM and embeddings externally to generate hypothetical answers.
+    - This notebook applies the same approach as outlined in point 5, within the collection named **RAGHydeCollection**, with one key difference: here, I've used the predefined LangChain HypotheticalDocumentEmbedder method. This streamlines the process by eliminating the manual effort required to call the LLM and embeddings externally to generate hypothetical answers.
       ![image](https://github.com/user-attachments/assets/91afabb4-9f24-4621-b690-9b3da55b7b2f)
       ![image](https://github.com/user-attachments/assets/0cb0e61f-c90b-4f8b-9ada-91f4e3fe2768)
 
