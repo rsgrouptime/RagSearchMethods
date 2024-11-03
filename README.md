@@ -241,21 +241,23 @@ This report provides a comparative analysis of nine Retrieval-Augmented Generati
 |5	 |Hybrid + Mannual HyDE (Hypothetical Document Embedding)|0.11|1.34|2.3|6.5|
 |6       |Dense + Predefined HyDE (Hypothetical Document Embedding)|1.53|0.88|3.7|9.4|
 |7	 |Hybrid + Hierarchical Indexing|0.3|0.23|0.28|3.28|
-|8	 |Hybrid + Parent Document Retriever|0.37|0.18|2.8|6|
-|9	 |Hybrid + Sentence Window Retrieval|0.14|0.33|3.78|6.5|
+|8	 |Hybrid + Parent Document Retriever|0.37|0.18|1.8|4.4|
+|9	 |Hybrid + Sentence Window Retrieval|0.14|0.33|1.45|4|
 
 **Key Observations:**
 1. Lowest Overall Response Time: The Hybrid + Hierarchical Indexing method had the lowest response time (3.28 seconds) with efficient latency across all stages, particularly in the Generation phase, making it well-suited for applications needing rapid responses.
 
-2. Fast Context and Re-Ranking Latency: The Sparse Search Fast Embed Model also showed competitive performance with a response time of 4.1 seconds due to its quick context and re-ranking latency.
+2. Fast Re-Ranking: Methods employing sparse or hybrid retrieval—such as Hybrid + Parent Document Retriever and Hybrid + Sentence Window Retrieval—demonstrated lower re-ranking latency, contributing to faster processing times.
 
-3. Higher Generation Latency: Dense + Predefined HyDE and Hybrid + Sentence Window Retrieval methods exhibited elevated generation latencies, resulting in longer overall response times (9.4 and 6.5 seconds, respectively). These methods might be preferable when complex document structure and enhanced context precision are a priority over response speed.
+3. Higher Generation Latency: Dense + Predefined HyDE and Hybrid + Mannual HyDE methods exhibited elevated generation latencies, resulting in longer overall response times (9.4 and 6.5 seconds, respectively). These methods might be preferable when complex document structure and enhanced context precision are a priority over response speed.
 
 4. Balanced Response and Latency: Dense Search Hugging Face Embed Model and Hybrid (Dense and Sparse) Search offered a balanced approach, with moderate overall response times (5.11 and 5.23 seconds). They achieved reasonable latency across context, re-ranking, and generation, making them suitable for tasks requiring a trade-off between speed and accuracy.
 
+5. Low Generation Latency: Techniques using hierarchical indexing or smaller, dense embeddings, like Hybrid + Hierarchical Indexing and Sparse Search Fast Embed Model, showed reduced generation latency, improving speed without compromising quality. 
+
 **Conclusion:**<br>
 Each RAG retrieval method exhibits unique strengths across different latency stages, indicating potential use-case-specific applicability. Hybrid + Hierarchical Indexing is optimal for scenarios requiring minimal response time, while Hybrid approaches and Dense + Predefined HyDE may be better suited for handling complex document embedding or enhanced context precision.
-This analysis underscores that these response and latency metrics are also influenced by the specific LLM and embedding models used, as well as the execution environment (e.g., GPU or TPU), allowing for flexibility in achieving optimized outcomes based on system architecture and application needs.
+This analysis underscores that these response and latency metrics are also influenced by the specific LLM and embedding models used, as well as the execution environment (e.g., GPU or TPU), allowing for flexibility in achieving optimized outcomes based on system architecture and application needs. Additionally, if the LLM stalls during processing and generation, response times can increase significantly, taking up to approximately 40 seconds to produce a final answer, as indicated by CPU analysis and testing.
 
 ## References:
 - This project leverages a variety of Retrieval-Augmented Generation (RAG) techniques for comprehensive performance analysis. For <br> foundational guidance, the implementation of these techniques primarily references the Medium article [Hybrid RAG using Qdrant, BM42, LlamaIndex, and MistralAI](https://medium.com/@pavannagula76/hybrid-rag-using-qdrant-bm42-llamaindex-and-mistralai-5d0d51093e8f). <br> Building on these concepts, additional RAG search techniques with varied mechanisms were implemented to expand the scope of retrieval strategies and response comparison.<br>
