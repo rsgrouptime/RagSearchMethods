@@ -2,7 +2,7 @@ llama-index
 langchain
 python-dotenv
 fastembed
-qdrant_client
-sentence_transformers
-langchain_community
+qdrant-client
+sentence-transformers
+langchain-community
 bitsandbytes
