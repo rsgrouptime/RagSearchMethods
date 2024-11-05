@@ -45,7 +45,7 @@ This project provides a series of Jupyter notebooks that explore and compare var
 4. Configure Docker Settings (Optional)<br>
     Open Docker Desktop settings to allocate memory, CPU, or disk space based on your requirements.
     
-**Qdrant VectorDB Setup**:
+**Qdrant VectorDB Setup**
 
 To search for Qdrant images in Docker Desktop, follow these steps:
 
@@ -64,7 +64,7 @@ To search for Qdrant images in Docker Desktop, follow these steps:
 These steps will help you locate, pull, and verify the Qdrant image in Docker Desktop.
     
 
-**HuggingFace Credential Setup:**
+**HuggingFace Credential Setup**
 
 To create Hugging Face credentials (token) using the provided URL, follow these steps:<br>
 
@@ -255,7 +255,7 @@ This report provides a comparative analysis of nine Retrieval-Augmented Generati
 
 5. Low Generation Latency: Techniques using hierarchical indexing or smaller, dense embeddings, like Hybrid + Hierarchical Indexing and Sparse Search Fast Embed Model, showed reduced generation latency, improving speed without compromising quality. 
 
-**Conclusion:**<br>
+**Conclusion:** <br>
 Each RAG retrieval method exhibits unique strengths across different latency stages, indicating potential use-case-specific applicability. Hybrid + Hierarchical Indexing is optimal for scenarios requiring minimal response time, while Hybrid approaches and Dense + Predefined HyDE may be better suited for handling complex document embedding or enhanced context precision.
 This analysis underscores that these response and latency metrics are also influenced by the specific LLM and embedding models used, as well as the execution environment (e.g., GPU or TPU), allowing for flexibility in achieving optimized outcomes based on system architecture and application needs. Additionally, if the LLM stalls during processing and generation, response times can increase significantly, taking up to approximately 40 seconds to produce a final answer, as indicated by CPU analysis and testing.
 
