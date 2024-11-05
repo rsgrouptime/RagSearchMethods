@@ -238,7 +238,7 @@ This report provides a comparative analysis of nine Retrieval-Augmented Generati
 |2	 |Dense Search Hugging Face Embed Model|0.1|0.86|0.65|5.11|
 |3	 |Sparse Search Fast Embed Model|0.03|0.30|2.82|4.1|
 |4	 |Hybrid (Dense and Sparse) Search|0.12|1.33|1.21|5.23|
-|5	 |Hybrid + Mannual HyDE (Hypothetical Document Embedding)|0.11|1.34|2.3|6.5|
+|5	 |Hybrid + Mannual HyDE (Hypothetical Document Embedding)|0.11|1.34|3.0|6.5|
 |6       |Dense + Predefined HyDE (Hypothetical Document Embedding)|1.53|0.88|3.7|9.4|
 |7	 |Hybrid + Hierarchical Indexing|0.3|0.23|0.28|3.28|
 |8	 |Hybrid + Parent Document Retriever|0.37|0.18|1.8|4.4|
@@ -249,7 +249,7 @@ This report provides a comparative analysis of nine Retrieval-Augmented Generati
 
 2. Fast Re-Ranking: Methods employing sparse or hybrid retrieval—such as Hybrid + Parent Document Retriever and Hybrid + Sentence Window Retrieval—demonstrated lower re-ranking latency, contributing to faster processing times.
 
-3. Higher Generation Latency: Dense + Predefined HyDE and Hybrid + Mannual HyDE methods exhibited elevated generation latencies, resulting in longer overall response times (9.4 and 6.5 seconds, respectively). These methods might be preferable when complex document structure and enhanced context precision are a priority over response speed.
+3. Higher Generation Latency: Dense + Predefined HyDE, Dense Search Fast Embed Model and Hybrid + Mannual HyDE methods exhibited elevated generation latencies, resulting in longer overall response times (9.4, 6.09 and 6.5 seconds, respectively). These methods might be preferable when complex document structure and enhanced context precision are a priority over response speed.
 
 4. Balanced Response and Latency: Dense Search Hugging Face Embed Model and Hybrid (Dense and Sparse) Search offered a balanced approach, with moderate overall response times (5.11 and 5.23 seconds). They achieved reasonable latency across context, re-ranking, and generation, making them suitable for tasks requiring a trade-off between speed and accuracy.
 
